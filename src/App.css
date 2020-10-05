@@ -1,0 +1,60 @@
+.search-bar{
+  display: flex;
+  height: 10%;
+  width: 100%;
+  background-color: darkcyan;
+  position: fixed;
+  }
+  .search-bar>i{
+      margin-right:0.2vw;
+      margin-top: 1.8vw;
+  }
+  .search-bar>input{
+      height: 40%;
+      margin-top:1.3vw; ;
+  }
+  .search-bar>h4{
+      margin-left: 32vw;
+      margin-right: 2vw;
+  }
+   .block0{
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+  }
+  .block1{
+      margin-top: 7%;
+      margin-bottom: 2vw;
+      border: darkcyan 2px solid;
+      max-width: 30vw;
+  }
+  p{
+      text-align: center;
+  }
+  h5{
+      text-align: center;
+  }
+  img{
+      width: 30vw;
+      height: 20vw;
+  }
+  .rate{
+      display: none;
+  }
+  .starcolor>i{
+      cursor: pointer;
+      transition: color ;
+  }
+  .card{
+      width: 35vw;
+      height: 20vw;
+      border-radius: 1vw;
+      margin-left:32.5vw;
+  }
+  .card>input{
+      display: block;
+      margin-left:11vw;
+  }
+  .btn{
+      margin-left:15.5vw;
+  } 
