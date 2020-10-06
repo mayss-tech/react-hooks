@@ -1,7 +1,7 @@
 
 import React,{useState} from 'react';
 import  {useEffect} from 'react';
-
+import Star from './star';
 
 
 export const MovieCard =(props)=>{
@@ -9,22 +9,22 @@ export const MovieCard =(props)=>{
     const [Title, setTitle]=useState("");
     const [Url, setUrl]=useState("");
     const [Description, setDescription]=useState("");
-    const [Rate, setRate]=useState("");
-    const [movieCard, setMovie]=useState(props.Movieslist)
-     useEffect(() => {
-        setMovie(props.Movieslist);
-     },[props.Movieslist]);
-        
+    const [Rate, setRate]=useState(0);
+    const [movie,setMovie]=useState(props.Movieslist)
+    useEffect(() => {
+        setMovie(props.Movieslist)   
+    }, [props.Movieslist])
+
 return  (<div> <div className="block0">
-{movieCard.filter(el=>el.title.toUpperCase().includes(props.Words.toUpperCase())).map(el=><div key={el.id} className="block1">
-    <img src={el.url} alt=""/>
+{movie.filter(el=>el.rate>=props.Rates).filter(el=>el.title.toUpperCase().includes(props.Words.toUpperCase())).map(el=><div key={el.id} className="block1">
+<img src={el.url} alt=""/>
 <h5>{el.title}</h5>
 <p>{el.description}</p>
-<p>{el.rate}</p>
-</div>   ) } </div>
+<Star rating={Number(el.rate)} />
+</div>) } </div>
 
 
-<div className="card">
+<div className="card " >
 <input type="text" placeholder="Url" onChange={(e)=>{setUrl(e.target.value)}}/>
 <input type="text"  placeholder="Title"onChange={(e)=>{setTitle(e.target.value)}}/>
 <input type="text" placeholder="Description" onChange={(e)=>{setDescription(e.target.value)}}/>

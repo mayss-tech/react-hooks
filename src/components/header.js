@@ -3,7 +3,7 @@ import Search from './filter';
 
 const Header =(props)=>{
     return(<>
-    <Search search={props.search}/>
+    <Search searchT={props.searchT} searchR={props.searchR}  />
     </>
     )
 }

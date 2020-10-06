@@ -1,3 +1,4 @@
+
 .search-bar{
   display: flex;
   height: 10%;
@@ -5,7 +6,7 @@
   background-color: darkcyan;
   position: fixed;
   }
-  .search-bar>i{
+  .loop{
       margin-right:0.2vw;
       margin-top: 1.8vw;
   }
@@ -14,8 +15,8 @@
       margin-top:1.3vw; ;
   }
   .search-bar>h4{
-      margin-left: 32vw;
-      margin-right: 2vw;
+      margin-left: 31vw;
+      margin-right: 1vw;
   }
    .block0{
       display:flex;
@@ -24,7 +25,7 @@
   }
   .block1{
       margin-top: 7%;
-      margin-bottom: 2vw;
+       margin-bottom: 2vw; 
       border: darkcyan 2px solid;
       max-width: 30vw;
   }
@@ -38,23 +39,34 @@
       width: 30vw;
       height: 20vw;
   }
-  .rate{
-      display: none;
-  }
-  .starcolor>i{
-      cursor: pointer;
-      transition: color ;
-  }
   .card{
-      width: 35vw;
-      height: 20vw;
-      border-radius: 1vw;
-      margin-left:32.5vw;
-  }
+       width: 38vw;
+      height: 25vw; 
+      margin-bottom: 10vw;
+      margin-left:30vw; 
+      background-image: url(https://img1.pnghut.com/4/20/18/u5XtMTakAk/cartoon-product-design-film-communication-clip-art.jpg);
+  }  
+
   .card>input{
       display: block;
-      margin-left:11vw;
+      margin-left:12vw;
   }
+
   .btn{
-      margin-left:15.5vw;
+      margin-left:16.5vw;
   } 
+  .rate1, .rate2, .rate3,  .rate4, .rate5, .rate0 {
+    margin-left: 12vw;
+  }
+  .rate1 .star1 { color: darkcyan; } .rate1 .star2 , .rate1 .star3 , .rate1 .star4 , .rate1 .star5 { color: rgb(128, 123, 123); } 
+
+   .rate2 .star1 , .rate2 .star2 { color: darkcyan; } .rate2 .star3 , .rate2 .star4 , .rate2 .star5 { color: rgb(128, 123, 123); } 
+
+  .rate3 .star1 , .rate3 .star2 , .rate3 .star3 { color: darkcyan; } .rate3 .star4 , .rate3 .star5 { color: rgb(128, 123, 123); } 
+ 
+  .rate4 .star1 , .rate4 .star2 , .rate4 .star3 , .rate4 .star4 { color: darkcyan; } .rate4 .star5 { color: rgb(128, 123, 123); } 
+ 
+  .rate5 i  { color: darkcyan; } 
+
+   .rate0 i  { color: rgb(128, 123, 123); }
+  /* .rate{display: none;} */
